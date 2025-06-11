@@ -15,11 +15,11 @@ set "SHORTCUT_NAME=SKLauncher.lnk"
 
 :: Download JDK zip
 echo Downloading JDK...
-powershell -Command "Invoke-WebRequest -Uri <JDK_ZIP_URL> -OutFile '%JDK_ZIP%'"
+powershell -Command "Invoke-WebRequest -Uri https://www.dropbox.com/scl/fi/og1hg34u5iqayrjexkad9/OpenJDK21U-jdk_x64_windows_hotspot_21.0.7_6.zip?rlkey=y98r0w8g7a2p5fxfzz08tpe7n&st=zppbcapd&dl=1 -OutFile '%JDK_ZIP%'"
 
 :: Download SKLauncher
 echo Downloading SKLauncher...
-powershell -Command "Invoke-WebRequest -Uri <SKLAUNCHER_JAR_URL> -OutFile '%SKL_JAR%'"
+powershell -Command "Invoke-WebRequest -Uri https://www.dropbox.com/scl/fi/cyqoio8w1x0akb0qpx21y/SKlauncher-3.2.12.jar?rlkey=l5ea4efugb4f3i28flxmvbtpf&st=1c7l6klm&dl=1 -OutFile '%SKL_JAR%'"
 
 :: Extract JDK zip
 echo Extracting JDK...
